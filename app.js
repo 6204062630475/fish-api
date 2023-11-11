@@ -115,7 +115,7 @@ app.get("/get-data", (req, res) => {
 app.get("/get-img", (req,res) =>{
   console.log("Send Image")
   let ImageDialog = []
-  for(let index = 0; index < 5; index++){
+  for(let index = 0; index < 10; index++){
     const imagePath = path.join(__dirname,"Image",`CaptureImageWithBoxes_${index}.jpg`)
     const imageBuffer = fs.readFileSync(imagePath)
     const base64String = imageBuffer.toString('base64')
