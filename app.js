@@ -21,7 +21,7 @@ const [modelWidth, modelHeight] = model.inputShape.slice(1, 3);
 // cors เพื่ออนุญาติการเข้าถึงapi
 // app.use(cors());
 app.use(cors({
-  origin: ['http://localhost:5173','http://localhost:5174'],
+  origin: ['http://localhost:5173','http://localhost:5174','https://fish-frontend-jet.vercel.app'],
   method: ['GET' , 'POST' , 'PUT' , 'DELETE'],
   credentials: true
 }));
