@@ -15,7 +15,7 @@ const model = {
   net: null,
   inputShape: [1, 0, 0, 3],
 };
-const classThreshold = 0.2;
+const classThreshold = 0.5;
 const [modelWidth, modelHeight] = model.inputShape.slice(1, 3);
 
 // cors เพื่ออนุญาติการเข้าถึงapi
